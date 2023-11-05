@@ -1,1 +1,11 @@
-# CS201-Project
+# CS201-Project-------------------------------------------------CS-201 Stock Market Query Engine----------------------------------------------------
+-->  Data Structures Used : Priority Changing Treaps (Max Heap + Nearly Randomised B.S.T)
+--> You are given a small simulation of the real life stock exchange (the names are random and reliability indexes are calculated as per the formula : )
+--> The data is to be taken input from input.txt provided in this GitHub repo because of the respective format
+--> You can buy a stock or insert your own stock in the market.
+--> You can search for best stock as per your security interest or as per your monetary interest.
+--> You can run as many queries as you want for searching and updating the stock market.
+--> For inserting , you must insert a unique name
+--> For deletion you must delete a valid name from the market.
+--> For getting the best stock with respect to a certain value you are willing to invest in , you will get the best reliability(highest or best)
+--> For getting the best stock with respect to a certain reliability you think is neccessary, you will get the best value(highest or best)
