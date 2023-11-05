@@ -238,7 +238,7 @@ int main() {
         cout << "None available in the market\n";
         continue;
       }
-      cout << "The best reliability you can get for given value is : " << temp->priority << " from yhe stock " << temp->name << endl;
+      cout << "The best reliability you can get for given value is : " << temp->priority << " from the stock " << temp->name << endl;
     } else break;
   }
   return 0;
