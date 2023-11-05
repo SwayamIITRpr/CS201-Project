@@ -87,7 +87,7 @@ node * Delete(node * root, ll target) {
   return root;
 }
 
-ll get_rel(node * root, ll k) {
+node *get_rel(node * root, ll k) {
   vector < ll > store;
   node * temp;
   temp = root;
@@ -97,11 +97,11 @@ ll get_rel(node * root, ll k) {
   }
   ll it = 0; // iterator to traverse the array / vector
   while (it < (ll) store.size() && store[it] > k) it++;
-  if (it == (ll) store.size()) return -1;
+  if (it == (ll) store.size()) return NULL;
   else {
     temp = root;
     for (ll i = 0; i < it; i++) temp = temp -> left;
-    return temp -> priority;
+    return temp;
   }
 }
 
@@ -224,7 +224,7 @@ int main() {
       }
       node * temp = get_val(root, k);
       if (temp == NULL) cout << "The expected reliability is too high\n";
-      else cout << "The best value you can get is : " << temp -> val << endl;
+      else cout << "The best value you can get is : " << temp -> val << " from the stock " << temp->name << endl;
     } else if (t == 5) {
       if (size == 0) {
         cout << "Market is empty :( \n)";
@@ -233,12 +233,12 @@ int main() {
       cout << "Enter the value : ";
       ll k;
       cin >> k;
-      ll ans = get_rel(root, k);
-      if (ans == -1) {
+      node *temp = get_rel(root, k);
+      if (temp==NULL) {
         cout << "None available in the market\n";
         continue;
       }
-      cout << "The best reliability you can get for given value is : " << ans << endl;
+      cout << "The best reliability you can get for given value is : " << temp->priority << " from yhe stock " << temp->name << endl;
     } else break;
   }
   return 0;
