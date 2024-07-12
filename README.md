@@ -8,4 +8,4 @@
 --> For inserting , you must insert a unique name
 --> For deletion you must delete a valid name from the market.
 --> For getting the best stock with respect to a certain value you are willing to invest in , you will get the best reliability(highest or best)
---> For getting the best stock with respect to a certain reliability you think is neccessary, you will get the best value(highest or best)
+--> For getting the best stock with respect to a certain reliability you think is neccessary, you will get the best value(highest or best).
